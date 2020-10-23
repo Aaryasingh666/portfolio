@@ -134,8 +134,5 @@ footer{
         left: 10px;
         position: fixed!important;
     }
-    nav ul{
-    	background: lightcoral; 
-    }
     nav ul li{text-align: center;}
 }
