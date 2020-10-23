@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- fontawesome 4 cdn link-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+	<title>About</title>
+	<link rel="stylesheet" href="about.css">
+</head>
+<body onload="preload();">
+	<div id="preloader">
+		<i class="fa-5x fa fa-spinner fa-pulse fa-3x fa-fw"></i>
+		<span class="sr-only">Loading...</span>
+	</div>
+	<!-- =========================nav start========================= -->
+	<nav class="navbar navbar-expand-md navbar-light bg-dark m-0 p-0">
+			<div class="container-fluid">
+				<a href="index.html" class="navbar-brand">
+					<img src="image/small-logo.png" alt="">
+				</a>
+				<button class="navbar-toggler" data-toggle="collapse" data-target="#n">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse text-uppercase" id="n" >
+					<ul class="navbar-nav pr-sm-3 ml-auto text-center">
+						<li class="nav-item">
+							<a href="index.html" class="nav-link text-white">
+								<i class="fa fa-home fa-fw text-white"></i> home
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="About.html" class="nav-link text-white">
+								<i class="fa fa-user-o fa-fw text-white"></i> about
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<section class="about-me">
+			<aside>
+				<div class="img-caption">
+					<img src="image/me.png" alt=""><h1>aarya</h1>
+				</div>
+				<div class="designation container">
+					<p><i class="fa fa-briefcase fa-fw"></i> web designer</p>
+					<p><i class="fa fa-home fa-fw"></i> kaithal, iN</p>
+					<p><i class="fa fa-check fa-fw"></i> freelancer</p>
+				</div>
+				<div class="skills">
+					<div class="container">
+						<h2><i class="fa fa-certificate fa-fw"></i> skills</h2>
+						<span>html 5<i>80%</i></span>
+						<div class="progress w-100">
+							<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+						<span>css 3<i>70%</i></span>
+						<div class="progress w-100">
+							<div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+						<span>bootstrap 4<i>70%</i></span>
+						<div class="progress w-100">
+							<div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+						<span>javascript<i>50%</i></span>
+						<div class="progress w-100">
+							<div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+						<span>php<i>40%</i></span>
+						<div class="progress w-100">
+							<div class="progress-bar" role="progressbar" style="width: 40%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+						<span>JSON<i>30%</i></span>
+						<div class="progress w-100">
+							<div class="progress-bar" role="progressbar" style="width: 30%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+						<span>mysqli<i>50%</i></span>
+						<div class="progress w-100">
+							<div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+						<span>es-6<i>40%</i></span>
+						<div class="progress w-100">
+							<div class="progress-bar" role="progressbar" style="width: 40%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+						<span>photoshop<i>35%</i></span>
+						<div class="progress w-100">
+							<div class="progress-bar" role="progressbar" style="width: 35%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+					</div>
+				</div>
+				<div class="skills set-lang">
+					<div class="container">
+					<h2><i class="fa fa-globe fa-fw"></i> languages</h2>
+						<span>hindi</span>
+						<div class="progress w-100">
+							<div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+						<span>english</span>
+						<div class="progress w-100">
+							<div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+					</div>
+				</div>
+			</aside>
+			<div class="float-left">
+			<section class="portfolio">
+				<div class="container">
+					<h2> <i class="fa fa-suitcase fa-fw"></i> portfolio</h2>
+					<div class="row mt-4">
+						<div class="col-lg-6 col-md-6 col-sm-12 col-12">
+							<div class="Task">
+								<img src="image/cart.jpg" alt="Cart" class="image">
+								<div class="overlay">
+									<a target="_blank" href="" onclick="ShoppingCart();">shopping-cart</a>
+								</div>
+							</div>
+							<div class="Task">
+								<img src="image/header.jpg" alt="Dummy-site" class="image">
+								<div class="overlay">
+									<a target="_blank" href="" onclick="onepagesite();">rwd dummy site</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-12 col-12">
+							<div class="Task">
+								<img src="image/responsive-menu.jpg" alt="RWD-Menu" class="image">
+								<div class="overlay">
+									<a target="_blank" href="" onclick="navbar();">responsive navbar</a>
+								</div>
+							</div>
+						</div><!-- <div class="col-lg-6 col-md-6 col-sm-12 col-12"></div> -->
+					</div>
+				</div>
+			</section>
+			<section class="education">
+				<div class="container">
+					<h1> <i class="fa fa-certificate fa-fw"></i>education</h1>
+					<div class="course">
+						<h3>desktop publication</h3>
+						<h6><i class="fa fa-calendar fa-fw"></i>2017 &ndash; 2018</h6>
+					</div>
+					<div class="course">
+						<h3>hs-cit</h3>
+						<h6><i class="fa fa-calendar fa-fw"></i>2017 &ndash; 2019</h6>
+					</div>
+					<div class="course none">
+						<h3>Bachelor in arts</h3>
+						<h6><i class="fa fa-calendar fa-fw"></i>2017 &ndash; 2018</h6>
+					</div>
+				</div>
+			</section>
+		</div>
+	</section>
+	<footer>
+		<div class="social-icons">
+			<a href="" onclick="fiverr();"><i class="fa fa-facebook fa-fw"></i></a>
+			<a href=""onclick="insta();"><i class="fa fa-instagram fa-fw"></i></a>
+		</div>
+			<p>Thanks for vist please get in touch via fiverr &amp; instagram i'll respond you soon</p>
+			<div class="copyright">
+				<p>&copy;&nbsp;<strong> MyResume</strong>. All Rights Reserved Designed by <a href="" onclick="fiverr();" class="pl-2 fa-fw"> aarya</a>
+				</p>
+			</div>
+		</footer>
+
+
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- waypoint cdn link -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

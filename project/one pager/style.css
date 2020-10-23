@@ -1,0 +1,554 @@
+/* universal selector */
+html{
+	scroll-behavior: smooth;
+	}
+	*{margin: 0px; padding: 0px; box-sizing: border-box;}
+	ul{list-style: none;}
+	a{text-decoration: none;}
+	a:hover{text-decoration: none;}
+	h1{
+		 opacity:.6;
+		 color: #A52A2A;
+		 font-weight: 400;
+		 text-transform: uppercase;
+		 text-align: center;
+	}
+	p{
+	    font-size: .9rem;
+	    line-height: 1.6;
+	    font-weight: 400;
+	}
+	.extra-div h2, .servicediv h2{
+		font-size: .9rem;
+	    font-weight: 600;
+	    text-transform: capitalize;
+	    padding: 12px 0;
+	    word-spacing: 4px;
+	}
+	.heading h1{
+		font-size: 1.3rem;
+	    font-weight: 600;
+	    line-height: 1.6;
+}
+	/* close universal selector */
+	/* *************************Header section start.************************* */
+header{
+	width: 100%;
+    height: 100vh;
+	background-image: linear-gradient(rgba(200, 0, 0, 0.4),
+		rgba(120, 0, 0, 0.4)),url('image/MOV.jpg');
+    background-size: cover;
+    clip-path: polygon(100% 0%, 100% 77%, 50% 100%, 0% 77%, 0% 0%);
+    position: relative;
+	}
+	header:before{
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		z-index: -1;
+		background: linear-gradient(to bottom, #660000 0%, #fff 0%, #f00 100%);
+		opacity: .4;
+	}
+	nav:before{
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		opacity: .2;
+		z-index: -1;
+		background: linear-gradient(to bottom, #5F021F 50%, #fff 100%);
+	}
+	.headsection{
+		width: 100%;
+		height: inherit;
+		text-align: center;
+		position: relative;
+	}
+	.headcontent{
+		width: 100%;
+	    height: auto;
+		position: absolute;
+	    top: 50%;
+	    left: 50%;
+	    transform: translate(-50%, -50%);
+	    -ms-transform: translate(-50%, -50%);
+	    -webkit-transform: translate(-50%, -50%);
+	}
+	.headcontent h1{
+		opacity: 1;
+	}
+	.headcontent p{
+		color: #fff;
+		padding: 10px 0 15px 0;
+		font-size: 1.3rem;
+	}
+	.head-buttons a{
+		display: inline;
+	    color: #fff;
+	    font-size: 1.1rem!important;
+	    text-transform: capitalize;
+	    border: 1px solid #fff;
+	    border-radius: 100px;
+	    padding: 12px 35px;
+	    outline: none;
+	    box-shadow: 0 0 15px 0 rgba(160, 1, 9, .3);
+	}
+	.head-buttons a:hover{
+		background: linear-gradient(rgba(168, 0, 10, 0.6), rgba(100, 0, 10, 0.5));
+	    color: #fff;
+	}
+/* *************************Header section end.************************* */
+/* ***************** Three extra Header divs Start.********************  */
+.extra-divs{
+	width: 100%;
+    height: auto;
+    margin: 100px auto;
+	}
+	i{
+		color: #A52A2A;
+	}
+	.extra-div{
+		background: #fff;
+		border: medium none;
+		padding: 50px!important;
+		border-radius: 10px;
+		transition: 0.5s;
+	}
+	.extra-div p{text-align: justify;}
+	.extra-div:hover{
+		box-shadow:0 0 20px 0 rgba(0, 0, 0, .3);
+	    transform: translateY(-20px);
+	}
+/* ********************* Three extra Header divs End.************************  */
+/* ********************* social icons start.**********************  */
+.icon-bar{
+	width: 5%!important;
+	position: fixed;
+	  top: 18%;
+	  right: 0;
+	  z-index: 99;
+	  padding: 0 10px 0 0px!important;
+	}
+	.icons{
+	  transform: translateY(-50%);
+	  -ms-transform: translateY(-50%);
+	  -webkit-transform: translateY(-50%);
+	  transition: .5s ease-in;
+	}
+	.icons:hover{
+	  padding: 10px!important;
+	}
+	.icons a {
+	  display: block!important;
+	  text-align: center;
+	  padding: 16px;
+	  transition: all 0.3s ease;
+	  font-size: 20px;
+	  border-radius: 50px;
+	  box-shadow:0 0 10px 0 rgba(0, 0, 0, .3);
+	}
+	.icons i{
+		color: white;
+	}
+	.facebook {
+	  background: #3B5998;
+	}
+	.twitter {
+	  background: #55ACEE;
+	}
+	.google {
+	  background: #dd4b39;
+	}
+	.linkedin {
+	  background: #007bb5;
+	}
+	.youtube {
+	  background: #bb0000;
+	}
+	.instagram{
+		background-image: radial-gradient(circle at top left,#0400ffbf,#ff0000b8);
+	}
+/* ********************* social icons End.************************  */
+/* ************************ What do we offer Start.**************************  */
+.service{
+    padding: 50px 0;
+    background: linear-gradient(rgba(168, 0, 0, 0.3), rgba(100, 0, 0, 0.2));
+	}
+	.name h2{
+		font-size: 0.9rem;
+	    color: #2e2e2e;
+	    font-weight: bold;
+	}
+	.progress{
+		height: 0.6rem!important;
+		margin-bottom: 25px!important;
+		background: lightgray!important;
+	}
+	.servicediv{
+
+	}
+	.service-icons{
+		display: flex;
+	    justify-content: center;
+	    align-items: center;
+	}
+/* ********************* What do we offer End.************************  */
+
+/* ********************** Project done Start.*************************  */
+.project-work{
+	margin: 100px 0 0 0 ;
+	}
+	.heading p{
+		margin-bottom: 40px;
+	}
+	.project-work h1{
+		font-weight: 400;
+		font-size: 2rem;
+		color: #600;
+	}
+/* ********************** Project done End.**************************  */
+
+/* ****************** Our best pricing Start.************************  */
+.price{
+	width: 100%;
+	height: 100vh;
+	padding: 50px;
+	background: linear-gradient(to top left,#a80000 50%, #fff 50%);
+		opacity: .6;
+	}
+	.price h2{
+		opacity:.6;
+		color: #A52A2A;
+	}
+	.card{
+		transition: .4s;
+		text-align: center!important;
+	}
+	.card-header{
+		font-size: 2rem;
+	    font-weight: bold;
+	    text-align: center;
+	    text-transform: uppercase;
+	    background: #fff!important;
+	    padding: 20px 0!important;
+	}
+	.card-body{
+	    padding: 40px 50px!important;
+	    margin: 0 auto;
+	}
+	.card-body li{
+		list-style: none;
+	    font-size: 15px;
+	    line-height: 2;
+	    text-transform: capitalize;
+	}
+	.card-body span{
+	    font-size: 40px;
+	    line-height: 1;
+	    color: #666;
+	    font-weight: 400;
+	}
+	.card-footer{
+		background: #fff!important;
+		padding: 25px 0!important;
+	}
+	.card-footer a{
+	    border: 1px solid #502;
+	    color: #666;
+	    border-radius: 100px;
+	    padding: 12px 35px;
+	    line-height: 1;
+	    text-transform: capitalize;
+	    text-decoration: none;
+	    outline: none;
+	}
+	.card:hover .card-footer a{
+		color: #fff;
+		border: none;
+		outline: none;
+		font-weight: 500;
+		text-decoration: none;
+		text-transform: uppercase;
+		background: #a8000a99;
+	}
+	.card:hover{
+		transform: translateY(-20px);
+		border-radius: 0px!important;
+		box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+	}
+	.card:hover span, .card:hover .card-header{
+		color: #a8000a99;
+	}
+	.second{
+		transform: translateY(-10px);
+	}
+/* ****************** Our best pricing End.**************************  */
+
+/* ****************** Our Happy clients Start.*************************  */
+.clients{
+	width: 100%;
+	height: 100vh;
+	padding: 80px 0;
+	}
+	.box{
+		text-align: center;
+	    border: 1px solid rgba(0,0,0,0.3);
+	    border-radius: 50px;
+	    box-shadow: 0 5px 10px 0 rgba(100, 0, 0, 0.3);
+	    transition: 0.4s ease;
+	}
+	.box img{
+		width: 100px;
+		height: 80px;
+		border-radius: 50%;
+		margin: 20px 0 0 0;
+	}
+	.box{
+		text-transform: capitalize;
+	    font-size: 20px;
+	    font-weight: bold;
+	}
+	.box h1{
+	    font-size: 22px;
+	    font-weight: bold;
+	}
+	.box h2{
+	    font-size: 15px;
+	    font-weight: 500;
+	    padding-bottom: 10px;
+	}
+	.carousel-indicators{
+		bottom: -60px!important;
+	}
+	.carousel-indicators li{
+		background: linear-gradient(rgba(168, 0, 10, 0.6), rgba(100, 0, 10, 0.5));	
+	}
+	.box:hover{
+		background: linear-gradient(rgba(168, 0, 10, 0.6), rgba(100, 0, 10, 0.5));
+		border: none;
+		transform: translateY(-10px);
+		box-shadow: 0 0 20px 0 rgba(90,0,0,0.6);
+	}
+	.box:hover p,
+	.box:hover h2,
+	.box:hover h1{
+		color: #fff!important;
+		opacity: 1;
+	}
+/* ****************** Our Happy clients End.**************************  */
+
+/* ****************** contact us start.******************************** */
+.contactus{
+	width: 100%;
+	height: 100vh;
+	padding: 100px 0;
+	position: relative;
+	box-sizing: border-box;
+	}
+	.contactus:before{
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		z-index: -1;
+		background: linear-gradient(to top right,#a80000 50%, #fff 50%);
+		opacity: .6;
+	}
+	.contactus form .form-group{
+		margin-bottom: 0rem!important;
+		position: relative;
+	}
+	.contactus form input{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    color: #fff;
+    border: none;
+    outline: none;
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+    background: transparent;
+    border-bottom: 1px solid #000;
+    }
+    .contactus form .form-group  label{
+    	position: absolute;
+    	top: 0;
+    	left: 10px;
+    	bottom: 0;
+    	right: 0;
+    	letter-spacing: 1px;
+    	padding: 20px 0;
+    	font-size: 18px;
+    	transition: 0.5s;
+    	text-transform: capitalize;
+    }
+    .contactus form input:focus~label,
+    .contactus form input:valid~label{
+    	transform: translateY(-30px);
+    }
+    .contactus form .form-check .form-check-input{
+		top: 0%;
+	    left: -50%;
+	    bottom: 0%;
+	    right: 0%;
+	    transform: translateY(25px);
+	    margin: 0px!important;
+    }
+	::placeholder{
+		font-size: 1rem;
+		font-weight: 300;
+		padding: 0 0 0 5px;
+	}
+	.contactus button{
+		display: none;
+	    color: #060606;
+	    font-weight: 400;
+	    font-size: 1.3rem!important;
+	    text-transform: capitalize;
+	    border: 1px solid #000;
+	    border-radius: 100px;
+	    padding: 12px 35px;
+	    outline: none;
+	    background: transparent;
+	    box-shadow: 0 0 10px 0 rgba(160, 1, 9, .3);
+	}
+	.contactus button:hover{
+		color: #060606;
+	    font-size: 25px!important;
+	    transition: .7s ease-in-out;
+		/* background: linear-gradient(rgba(168, 0, 10, 0.6), rgba(100, 0, 10, 0.5)); */
+		background: #fff;
+	}
+	form:hover button{
+		display: block;
+		border: none;
+		outline: none;
+	}
+/* ******************* contact us End.*************************** */
+/* ******************* Newsletter start ************************* */
+.newsletter{
+	width: 100%;
+	height: auto;
+	margin: 80px auto;
+	}
+	.input-field{
+		width: 7rem!important;
+	    height: 2.8125rem!important;
+	    border-top-left-radius: 100px!important;
+	    border-bottom-left-radius: 100px!important;
+	}
+	.input-button{
+		width: 7rem!important;
+	    height: 2.8125rem!important;
+	    color: #fff!important;
+	    outline: none;
+	    border-top-right-radius: 100px!important;
+	    border-bottom-right-radius: 100px!important;
+	    text-transform: capitalize;
+	    font-size: 1.1rem!important;
+	    background: linear-gradient(rgba(168, 0, 10, 0.6), rgba(100, 0, 10, 0.5));
+	}
+	form:hover .input-button,
+	form:hover .input-field{
+		width: 8rem!important;
+		height: 3rem!important;
+		font-size: 1.3rem!important;
+		line-height: 1.6;
+		transition: .4s ease-in-out;
+	}
+/* ******************* Newsletter End  ************************** */
+
+/* ********************* Footer start.*************************** */
+footer{
+	width: 100%;
+	height: auto;
+	padding: 70px 0 20px 0;
+	background: #ffb6c1;
+	}
+	footer h1{
+		font-size: 1.2rem;
+	    font-weight: bold;
+	    text-shadow: 0 2px 5px rgba(0,0,0,0.4);
+	    margin: 0 0 25px 0;
+	}
+	footer li{
+		list-style: none;
+		text-align: center;
+	}
+	footer li a{
+		color: #000;
+		text-decoration: none;
+		text-transform: capitalize;
+	}
+	footer li a:hover{
+		color: #000;
+		text-decoration: none;
+		text-align: center;
+	}
+	#mybtn{
+	display: none;
+    color: #fff;
+    font-weight: bold;
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    background: #ffb6c1;
+    border-radius: 10px;
+    padding: 10px;
+    z-index: 99;
+	}
+	#mybtn:hover{
+	background: #ff69b4;
+	}
+/* ********************* Footer end.**************************** */
+
+/* ======================== media queries ======================== */
+/* ======================== Mobile view ======================== */
+@media(max-width:967px){
+	.price,.clients,.contactus{
+		margin: 50px 0 0 0;
+		height: auto;
+	}
+	.contactus p{
+		padding: 0 50px;
+	}
+	footer{
+		margin: 10px 0;
+	}
+	.icon-bar {
+	  width: 10%!important;
+	  padding: 0 10px 0 0!important;
+	}
+}
+@media(max-width: 576px){
+	.icon-bar{
+	width: 10%!important;
+	padding: 0 10px 0 0px!important;
+	}
+	.icons i{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+@media(max-width: 376px){
+	.icon-bar{
+	width: 5%!important;
+	margin: 0 30px 0 0px!important;
+	}
+	.icons{
+	  transform: translateY(0%);
+	  -ms-transform: translateY(0%);
+	  -webkit-transform: translateY(0%);
+	}
+	.icons:hover{
+	  padding: 0px!important;
+	}
+}
