@@ -10,5 +10,4 @@ localStorage.setItem("totalcost",productcost + product.price);
 }
 else{
 localStorage.setItem("totalcost",product.price);
-}
-}
+} }

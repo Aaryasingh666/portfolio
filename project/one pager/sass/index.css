@@ -1,0 +1,712 @@
+/* universal selector */
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h1 {
+  opacity: .6;
+  color: #A52A2A;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: .9rem;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+.extra-div h2, .servicediv h2 {
+  font-size: .9rem;
+  font-weight: 600;
+  padding: 12px 0;
+  word-spacing: 4px;
+  text-transform: capitalize;
+}
+
+.heading h1 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+/* *************************Header section start.************************* */
+header {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-size: cover;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#c8000066), to(#78000066)), url("../image/MOV.jpg");
+  background-image: linear-gradient(#c8000066, #78000066), url("../image/MOV.jpg");
+  -webkit-clip-path: polygon(100% 0%, 100% 77%, 50% 100%, 0% 77%, 0% 0%);
+          clip-path: polygon(100% 0%, 100% 77%, 50% 100%, 0% 77%, 0% 0%);
+}
+
+header:before {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  position: absolute;
+  content: "";
+  opacity: .4;
+  background: -webkit-gradient(linear, left top, left bottom, from(#660000), color-stop(0%, #fff), to(#f00));
+  background: linear-gradient(to bottom, #660000 0%, #fff 0%, #f00 100%);
+}
+
+header nav:before {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  position: absolute;
+  content: "";
+  opacity: .2;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #5F021F), to(#fff));
+  background: linear-gradient(to bottom, #5F021F 50%, #fff 100%);
+}
+
+header .headsection {
+  width: 100%;
+  height: inherit;
+  text-align: center;
+  position: relative;
+}
+
+header .headsection .headcontent {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+header .headsection .headcontent h1 {
+  opacity: 1;
+}
+
+header .headsection .headcontent p {
+  color: #fff;
+  padding: 10px 0 15px 0;
+  font-size: 1.3rem;
+}
+
+header .headsection .headcontent .head-buttons a {
+  display: inline;
+  color: #fff;
+  font-size: 1.1rem !important;
+  text-transform: capitalize;
+  border: 1px solid #fff;
+  border-radius: 100px;
+  padding: 12px 35px;
+  outline: none;
+  -webkit-box-shadow: 0 0 15px 0 #a001094d;
+          box-shadow: 0 0 15px 0 #a001094d;
+}
+
+header .headsection .headcontent .head-buttons a:hover {
+  color: #fff;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(168, 0, 10, 0.6)), to(rgba(100, 0, 10, 0.5)));
+  background: linear-gradient(rgba(168, 0, 10, 0.6), rgba(100, 0, 10, 0.5));
+}
+
+/* ********************* social icons start.**********************  */
+.icon-bar {
+  top: 18%;
+  right: 0;
+  z-index: 101010;
+  position: fixed;
+  width: 5% !important;
+  padding: 0 10px 0 0px !important;
+}
+
+.icon-bar .icons {
+  -webkit-transition: .5s ease-in;
+  transition: .5s ease-in;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.icon-bar .icons:hover {
+  padding: 5px !important;
+}
+
+.icon-bar .icons a {
+  display: block !important;
+  text-align: center;
+  padding: 16px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  font-size: 20px;
+  border-radius: 50px;
+  -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+.icon-bar .icons i {
+  color: #fff;
+}
+
+.icon-bar .icons .facebook {
+  background: #3B5998;
+}
+
+.icon-bar .icons .twitter {
+  background: #55ACEE;
+}
+
+.icon-bar .icons .google {
+  background: #dd4b39;
+}
+
+.icon-bar .icons .linkedin {
+  background: #007bb5;
+}
+
+.icon-bar .icons .youtube {
+  background: #bb0000;
+}
+
+.icon-bar .icons .instagram {
+  background-image: radial-gradient(circle at top left, #0400ffbf, #ff0000b8);
+}
+
+/* ***************** Three extra Header divs Start.********************  */
+.extra-divs {
+  width: 100%;
+  height: auto;
+  margin: 100px auto;
+}
+
+.extra-divs i {
+  color: #A52A2A;
+}
+
+.extra-divs .extra-div {
+  background: #fff;
+  border: medium none;
+  padding: 50px !important;
+  border-radius: 10px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.extra-divs .extra-div p {
+  text-align: justify;
+}
+
+.extra-divs .extra-div:hover {
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+  -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+/* ************************ What do we offer Start.**************************  */
+.service {
+  padding: 50px 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(168, 0, 0, 0.3)), to(rgba(100, 0, 0, 0.2)));
+  background: linear-gradient(rgba(168, 0, 0, 0.3), rgba(100, 0, 0, 0.2));
+}
+
+.service .name h2 {
+  font-size: 0.9rem;
+  color: #2e2e2e;
+  font-weight: bold;
+}
+
+.service .name .progress {
+  height: 0.6rem !important;
+  margin-bottom: 25px !important;
+  background: lightgray !important;
+}
+
+.service .service-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.service .service-icons i {
+  color: #A52A2A;
+}
+
+/* ********************** Project done Start.*************************  */
+.project-work {
+  margin: 100px 0 0 0;
+}
+
+.project-work .heading h1 {
+  font-weight: 400;
+  font-size: 2rem;
+  color: #600;
+}
+
+.project-work .heading p {
+  margin-bottom: 40px;
+}
+
+/* ****************** Our best pricing Start.************************  */
+.price {
+  width: 100%;
+  height: 100vh;
+  opacity: .6;
+  padding: 50px;
+  background: -webkit-gradient(linear, right bottom, left top, color-stop(50%, #a80000), color-stop(50%, #fff));
+  background: linear-gradient(to top left, #a80000 50%, #fff 50%);
+}
+
+.price h2 {
+  opacity: .6;
+  color: #A52A2A;
+}
+
+.price .card {
+  -webkit-transition: .4s;
+  transition: .4s;
+  text-align: center !important;
+}
+
+.price .card .card-header {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  background: #fff !important;
+  padding: 20px 0 !important;
+}
+
+.price .card .card-body {
+  padding: 40px 50px !important;
+  margin: 0 auto;
+}
+
+.price .card .card-body li {
+  list-style: none;
+  font-size: 15px;
+  line-height: 2;
+  text-transform: capitalize;
+}
+
+.price .card .card-body li span {
+  font-size: 40px;
+  line-height: 1;
+  color: #666;
+  font-weight: 400;
+}
+
+.price .card .card-footer {
+  background: #fff !important;
+  padding: 25px 0 !important;
+}
+
+.price .card .card-footer a {
+  border: 1px solid #502;
+  color: #666;
+  border-radius: 100px;
+  padding: 12px 35px;
+  line-height: 1;
+  text-transform: capitalize;
+  text-decoration: none;
+  outline: none;
+}
+
+.price .card:hover .card-footer a {
+  color: #fff;
+  border: none;
+  outline: none;
+  font-weight: 500;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: #a8000a99;
+}
+
+.price .card:hover {
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+  border-radius: 0px !important;
+  -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.price .card:hover .card-body span, .price .card:hover .card-header {
+  color: #a8000a99;
+}
+
+.price .card .second {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
+/* ****************** Our Happy clients Start.*************************  */
+.clients {
+  width: 100%;
+  height: 100vh;
+  padding: 80px 0;
+}
+
+.clients .box {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 50px;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  text-transform: capitalize;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 5px 10px 0 rgba(100, 0, 0, 0.3);
+          box-shadow: 0 5px 10px 0 rgba(100, 0, 0, 0.3);
+}
+
+.clients .box img {
+  width: 100px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 20px 0 0 0;
+}
+
+.clients .box h1 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.clients .box h2 {
+  font-size: 15px;
+  font-weight: 500;
+  padding-bottom: 10px;
+}
+
+.clients .box:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(168, 0, 10, 0.6)), to(rgba(100, 0, 10, 0.5)));
+  background: linear-gradient(rgba(168, 0, 10, 0.6), rgba(100, 0, 10, 0.5));
+  border: none;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+  -webkit-box-shadow: 0 0 20px 0 rgba(90, 0, 0, 0.6);
+          box-shadow: 0 0 20px 0 rgba(90, 0, 0, 0.6);
+}
+
+.clients .box:hover p, .clients .box:hover h2, .clients .box:hover h1 {
+  opacity: 1;
+  color: #fff !important;
+}
+
+.clients .carousel-indicators {
+  bottom: -60px !important;
+}
+
+.clients .carousel-indicators li {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(168, 0, 10, 0.6)), to(rgba(100, 0, 10, 0.5)));
+  background: linear-gradient(rgba(168, 0, 10, 0.6), rgba(100, 0, 10, 0.5));
+}
+
+/* ****************** contact us start.******************************** */
+.contactus {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  padding: 100px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.contactus:before {
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  opacity: .6;
+  position: absolute;
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(50%, #a80000), color-stop(50%, #fff));
+  background: linear-gradient(to top right, #a80000 50%, #fff 50%);
+}
+
+.contactus .form-group {
+  margin-bottom: 0rem !important;
+  position: relative;
+}
+
+.contactus .form-group input {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  color: #fff;
+  border: none;
+  outline: none;
+  letter-spacing: 1px;
+  font-size: 1.5rem;
+  background: transparent;
+  border-bottom: 1px solid #000;
+}
+
+.contactus .form-group input:focus ~ label,
+.contactus .form-group input:valid ~ label {
+  -webkit-transform: translateY(-30px);
+          transform: translateY(-30px);
+}
+
+.contactus .form-group label {
+  top: 0;
+  left: 10px;
+  bottom: 0;
+  right: 0;
+  letter-spacing: 1px;
+  padding: 20px 0;
+  font-size: 18px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  position: absolute;
+  text-transform: capitalize;
+}
+
+.contactus .form-group ::-webkit-input-placeholder {
+  font-size: 1rem;
+  font-weight: 300;
+  padding: 0 0 0 5px;
+}
+
+.contactus .form-group :-ms-input-placeholder {
+  font-size: 1rem;
+  font-weight: 300;
+  padding: 0 0 0 5px;
+}
+
+.contactus .form-group ::-ms-input-placeholder {
+  font-size: 1rem;
+  font-weight: 300;
+  padding: 0 0 0 5px;
+}
+
+.contactus .form-group ::placeholder {
+  font-size: 1rem;
+  font-weight: 300;
+  padding: 0 0 0 5px;
+}
+
+.contactus button {
+  display: none;
+  color: #060606;
+  font-weight: 400;
+  font-size: 1.3rem !important;
+  text-transform: capitalize;
+  border: 1px solid #000;
+  border-radius: 100px;
+  padding: 12px 35px;
+  outline: none;
+  background: transparent;
+  -webkit-box-shadow: 0 0 10px 0 rgba(160, 1, 9, 0.3);
+          box-shadow: 0 0 10px 0 rgba(160, 1, 9, 0.3);
+}
+
+.contactus button:hover {
+  color: #060606;
+  font-size: 25px !important;
+  -webkit-transition: .7s ease-in-out;
+  transition: .7s ease-in-out;
+  background: #fff;
+}
+
+.contactus form:hover button {
+  display: block;
+  border: none;
+  outline: none;
+}
+
+/* ******************* Newsletter start ************************* */
+.newsletter {
+  width: 100%;
+  height: auto;
+  margin: 80px auto;
+}
+
+.newsletter form .input-field {
+  width: 7rem !important;
+  height: 2.8125rem !important;
+  border-top-left-radius: 100px !important;
+  border-bottom-left-radius: 100px !important;
+}
+
+.newsletter form .input-button {
+  outline: none;
+  width: 7rem !important;
+  text-transform: capitalize;
+  font-size: 1.1rem !important;
+  height: 2.8125rem !important;
+  color: #fff !important;
+  border-top-right-radius: 100px !important;
+  border-bottom-right-radius: 100px !important;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(168, 0, 10, 0.6)), to(rgba(100, 0, 10, 0.5)));
+  background: linear-gradient(rgba(168, 0, 10, 0.6), rgba(100, 0, 10, 0.5));
+}
+
+.newsletter form:hover .input-button,
+.newsletter form:hover .input-field {
+  line-height: 1.6;
+  width: 8rem !important;
+  height: 3rem !important;
+  font-size: 1.3rem !important;
+  -webkit-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
+}
+
+/* ********************* Footer start.*************************** */
+footer {
+  width: 100%;
+  height: auto;
+  padding: 70px 0 20px 0;
+  background: #ffb6c1;
+}
+
+footer form .input-field {
+  width: 7rem !important;
+  height: 2.8125rem !important;
+  border-top-left-radius: 100px !important;
+  border-bottom-left-radius: 100px !important;
+}
+
+footer form .input-button {
+  outline: none;
+  width: 7rem !important;
+  text-transform: capitalize;
+  font-size: 1.1rem !important;
+  height: 2.8125rem !important;
+  color: #fff !important;
+  border-top-right-radius: 100px !important;
+  border-bottom-right-radius: 100px !important;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(168, 0, 10, 0.6)), to(rgba(100, 0, 10, 0.5)));
+  background: linear-gradient(rgba(168, 0, 10, 0.6), rgba(100, 0, 10, 0.5));
+}
+
+footer form:hover .input-button,
+footer form:hover .input-field {
+  line-height: 1.6;
+  width: 8rem !important;
+  height: 3rem !important;
+  font-size: 1.3rem !important;
+  -webkit-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
+}
+
+footer h1 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0 0 25px 0;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+footer li {
+  list-style: none;
+  text-align: center;
+}
+
+footer li a {
+  color: #000;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+footer li a:hover {
+  color: #000;
+  text-decoration: none;
+  text-align: center;
+}
+
+footer #mybtn {
+  right: 40px;
+  z-index: 99;
+  bottom: 20px;
+  padding: 10px;
+  display: none;
+  position: fixed;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 10px;
+  background: #ffb6c1;
+}
+
+footer #mybtn:hover {
+  background: #ff69b4;
+}
+
+/* ======================== media queries ======================== */
+@media (max-width: 967px) {
+  .price, .clients, .contactus {
+    margin: 50px 0 0 0;
+    height: auto;
+  }
+  .contactus p {
+    padding: 0 50px;
+  }
+  footer {
+    margin: 10px 0;
+  }
+  .icon-bar {
+    width: 10% !important;
+    padding: 0 10px 0 0 !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .icon-bar {
+    width: 10% !important;
+    padding: 0 10px 0 0px !important;
+  }
+  .icon-bar .icons i {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (max-width: 376px) {
+  .icon-bar {
+    width: 5% !important;
+    margin: 0 30px 0 0px !important;
+  }
+  .icon-bar .icons {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  .icon-bar .icons:hover {
+    padding: 0px !important;
+  }
+}
+/*# sourceMappingURL=index.css.map */

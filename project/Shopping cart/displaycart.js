@@ -1,4 +1,4 @@
-
+//Access all the cart buttons..
 //cart item display on cart page with this function
 let displaycart = () => {
         let cartitems = localStorage.getItem('productsincart');
@@ -23,7 +23,7 @@ let displaycart = () => {
                 		<i class="fa fa-minus-square-o fa-fw" aria-hidden="true"></i>
                 	</button>
                 	<span>${item.incart}</span>
-                	<button>
+                	<button onclick = "cartnumbers(product);">
                 		<i class="fa fa-plus-square-o fa-fw" aria-hidden="true"></i>
                 	</button>
                 </div>

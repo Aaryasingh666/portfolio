@@ -7,8 +7,7 @@ if(cartitems[product.tag] == undefined){
 cartitems = {
 ...cartitems,
 [product.tag]:product
-}
-}
+} }
 cartitems[product.tag].incart += 1;
 }
 else{
@@ -16,7 +15,6 @@ product.incart = 1;
 
 cartitems = {
 [product.tag]:product
-}
-}
+} } 
 localStorage.setItem("productsincart",JSON.stringify(cartitems));
 }

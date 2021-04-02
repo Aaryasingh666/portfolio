@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="sass/index.css">
 	<title>one pager website.</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -372,7 +372,10 @@
 				<a class="carousel-control-next" href="#demo" data-slide="next">
 					<span class="carousel-control-next-icon container"></span></a>
 			</div>
-	</section>																												<!--****************** contact us start.**************************-->													<section class="contactus" id="contactid">																					<div class="container headings text-center">
+	</section>
+	<!--****************** contact us start.**************************-->
+	<section class="contactus" id="contactid">
+		<div class="container headings text-center">
 			<h1>contact us</h1>
 			<p class="text-capitalize pt-1">we're here to help and answer any question you might have we look forward to hearing from you 😃</p>
 		</div>
@@ -453,7 +456,7 @@
 				</div>
 				<div class="row">
 					<div class="col-lg-8 col-md-8 col-10 offset-lg-2 offset-md-2 offset-1 text-center pt-4 text-capitalize">
-						<p>© 2020 all right reserved| this template is made by aarya</p>
+						<p>© <span id='year'></span> all right reserved| this template is made by aarya</p>
 					</div>
 				</div>
 				<div class="scroll-top float-right">
@@ -493,6 +496,8 @@
 			document.body.scrollTop = 0; //for safari
 			document.documentElement.scrollTop = 0; //chrome,firefox,IE and opera.
 		}
+		let year = new Date().getFullYear();
+		document.getElementById('year').innerHTML = year;
 	</script>
 </body>
 </html>

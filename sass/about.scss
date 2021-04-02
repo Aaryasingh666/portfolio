@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
+*{margin: 0; padding: 0; box-sizing: border-box; font-family: 'Mulish', sans-serif;}
+
+	// create variables in sass.
+	$heading: #231c1c;
+	$paraspan: #fff;
+	$fullwidth: 100%;
+	$autoheight: auto;
+	$overflowhide: hidden;
+	$textcap: capitalize;
+	$mainbg: linear-gradient(to bottom,#52566e,#7e91b9);
+	$boxshadow: inset 5px 5px 5px #928f8f33, inset -5px -5px 15px #ffffff1a,	5px 5px 15px #0000004d,
+	-5px -5px 15px #ffffff1a;
+
+	::-webkit-scrollbar{width: 10px;}
+	::-webkit-scrollbar-thumb{
+		background: $mainbg;
+		border-radius: 8px;}
+	#preloader {
+		width: $fullwidth;
+		height: 100vh;
+		position: fixed;
+		background: $paraspan;
+		z-index: 101010101010;
+		display: inline-block;
+	.fa-spinner{
+		top: 50%;
+		left: 50%;
+		color: #444;
+		position: absolute;
+		transform: translate(-50% , -50%);
+	} }
+	i{color: #19c;}
+	h2{
+		color: $heading;
+		font-size: 18px;
+		font-weight: 700;
+		text-transform: $textcap;
+	}
+	h1{
+		left: 5%;
+	    color: $heading;
+	    bottom: 50px;
+	    font-size: 30px;
+	    font-weight: bold;
+	    position: relative;
+	    background: transparent;
+	    text-transform: $textcap;
+	}
+  	/* .about-me section start */
+ nav{background: $mainbg; img{
+    width: 4rem;
+   height: 2.3rem;
+   } }
+   .about-me{
+       height: $autoheight;
+       display: flex;
+       flex-basis: $fullwidth;
+       overflow: $overflowhide;
+       background: $mainbg;
+	   
+    /* aside/left side */
+    aside{
+        height: $autoheight;
+        flex-basis: 30%;
+        overflow: $overflowhide;
+        background: $mainbg;
+        margin: 15px 10px;
+        padding-bottom: 20px;
+		border-radius: 25px;
+        box-shadow: $boxshadow;
+
+	img{
+		width: $fullwidth;
+		height: $autoheight;
+		background: linear-gradient(to bottom,#52566e,#7e91b9);
+	}
+	.designation{
+		bottom: 20px;
+		padding: 0 0 0 5%;
+		position: relative;
+		border-bottom: 1px solid darkslategrey;
+	p{
+		color: $paraspan;
+		font-size: 14px;
+		font-weight: 400;
+		text-transform: $textcap;
+	} }
+	.skills{
+		width: $fullwidth;
+		height: 200px;
+		overflow: auto;
+	
+    span{
+		color: $paraspan;
+		padding: 5px 0;
+		display: block;
+		font-size: 13px;
+		line-height: 1.2;
+		font-weight: 600;
+		margin: 3px 0 0 0;
+		font-style: italic;
+		letter-spacing: 2px;
+		text-transform: uppercase; 
+	i{
+		float: right;
+		color: $paraspan;
+		font-size: 12px;
+		font-weight: 500;
+		line-height: 1.2;
+		font-style: italic;
+	} }
+	.progress{
+		height: 10px;
+		box-shadow: $boxshadow;
+	
+    .progress-bar{
+	   	background-color: #343a40;
+	   	background-size: 100% 100%;
+	   	animation: progress-bar-stripes 1s linear infinite;
+	   	-ms-animation: progress-bar-stripes 1s linerar infinite;
+		-webkit-animation: progress-bar-stripes 1s linear infinite;
+	   	background-image: linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+    } } }
+	.set-lang{margin-top: 30px;} } 
+    /* main/right side */
+    .portfolio{
+        height: 61vh;
+        overflow: auto;
+        background: $mainbg;
+        margin: 15px 10px;
+        padding-bottom: 20px;
+		border-radius: 25px;
+        box-shadow: $boxshadow;
+    .container{
+        padding: 15px;
+    .Task {
+        width: $fullwidth;
+        margin: 0 0 1rem 0;
+        position: relative;
+		border-radius: 20px;
+		box-shadow: $boxshadow;
+    .image {
+        width: $fullwidth;
+        height: $autoheight;
+		border-radius: 18px;
+        display: block;}
+    .overlay { 
+        bottom: 0;
+        opacity:0;
+        width: $fullwidth;
+        padding: 20px;
+        position: absolute;
+        transition: 1.5s ease;
+        background: rgb(0, 0, 0);
+        background: rgba(0, 0, 0, 0.5);
+    a,a:hover{
+        color: $paraspan;
+        display: flex;
+        font-size: 20px;
+        font-weight: 400;
+        text-decoration: none;
+        justify-content: center;
+        text-transform: uppercase;
+    } } &:hover .overlay{opacity: 1; border-radius: 18px;} } } }
+    .education{
+        height: 61vh;
+        overflow: auto;
+        background: $mainbg;
+        margin: 15px 10px;
+        padding-bottom: 20px;
+		border-radius: 25px;
+        box-shadow: $boxshadow;
+    &{
+        height: $autoheight;
+        overflow: $overflowhide;
+    .container{
+        padding: 15px;
+    } 
+    h1{
+        left: 0%;
+        bottom: -5px;
+        font-weight: 800;
+    }
+    .course{
+        width: $fullwidth;
+        height: $autoheight;
+        overflow: $overflowhide;
+        margin-top: 1.2rem;
+        padding: 10px 10px 0px 20px;
+        border-bottom: 1px solid #d3d3d3;
+    h3{
+        color: $paraspan;
+        font-size: 18px;
+        font-weight: 500;
+        padding: 0 0 10px 0;
+        text-transform: uppercase;
+    }
+    h6, h6 i{
+        color: #000;
+        font-size: 16px;
+        font-weight: 300;
+        padding-right: 25px;
+        padding-bottom: 20px;
+    } }
+    .none{border-bottom: none;} } } }
+    /* =============================footer section start============================= */
+    footer{
+        width: $fullwidth;
+        height: $autoheight;
+		padding: 10px 0 0 0;
+        background: $mainbg;
+        box-shadow: $boxshadow;
+    .social-icons{
+		display: flex;
+		justify-content: center;
+	 a, a:hover{
+		line-height: 1;
+		font-size: 20px;
+		font-weight: 400;
+		margin: 0 0 0 10px;
+		padding: 0px  5px 0;
+		text-align: center;
+	}
+	.fa{color: $paraspan;}}
+    p {
+		margin: 0;
+		padding: 0;
+  		color: $paraspan;
+  		font-size: 15px;
+ 		font-weight: 400;
+		text-align: center;}
+	.copyright{
+		display: flex;
+		justify-content: center;
+	a, a:hover{
+		outline: none;
+		color: $paraspan;
+		font-size: 15px;
+		font-weight: 500;
+		text-decoration: none;
+		text-transform: $textcap;
+	} } }
+/* ====================================media queries==================================== */
+
+@media(max-width: 767px) {
+	nav{
+		.navbar-toggler{outline: none;
+			border: none;
+			span{
+				color: $paraspan;
+				display: inline-block;
+				width: 1.5em;
+				vertical-align: middle;
+				background: no-repeat center center;
+				background-size: 100% 100%;
+				font-size: 2rem;
+				font-weight: 100;
+				font-family: fantasy;
+			} }	}
+	.about-me .education{
+		height: 100vh;
+		overflow: auto;}
+	}
+	@media(max-width: 600px) {
+		.about-me{
+			display: block;
+
+		aside, .education, .portfolio{
+			height: $autoheight;
+			flex-basis: $fullwidth;
+		}
+		.education,	.portfolio{
+			height: 78vh;
+			flex-basis: $fullwidth;
+		} } }
