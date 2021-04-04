@@ -11,6 +11,13 @@
 	$mainbg: linear-gradient(to bottom,#52566e,#7e91b9);
 	$boxshadow: inset 5px 5px 5px #928f8f33, inset -5px -5px 15px #ffffff1a,	5px 5px 15px #0000004d,
 	-5px -5px 15px #ffffff1a;
+	@mixin portedu {
+        margin: 15px 10px;
+		border-radius: 25px;
+        padding-bottom: 20px;
+		background: $mainbg;
+        box-shadow: $boxshadow;
+	}
 
 	::-webkit-scrollbar{width: 10px;}
 	::-webkit-scrollbar-thumb{
@@ -125,13 +132,9 @@
 	.set-lang{margin-top: 30px;} } 
     /* main/right side */
     .portfolio{
-        height: 61vh;
+		height: 61vh;
         overflow: auto;
-        background: $mainbg;
-        margin: 15px 10px;
-        padding-bottom: 20px;
-		border-radius: 25px;
-        box-shadow: $boxshadow;
+        @include portedu;
     .container{
         padding: 15px;
     .Task {
@@ -164,16 +167,10 @@
         text-transform: uppercase;
     } } &:hover .overlay{opacity: 1; border-radius: 18px;} } } }
     .education{
-        height: 61vh;
-        overflow: auto;
-        background: $mainbg;
-        margin: 15px 10px;
-        padding-bottom: 20px;
-		border-radius: 25px;
-        box-shadow: $boxshadow;
-    &{
-        height: $autoheight;
+        @include portedu;
+		height: $autoheight;
         overflow: $overflowhide;
+    
     .container{
         padding: 15px;
     } 
@@ -203,7 +200,7 @@
         padding-right: 25px;
         padding-bottom: 20px;
     } }
-    .none{border-bottom: none;} } } }
+    .none{border-bottom: none;}  } }
     /* =============================footer section start============================= */
     footer{
         width: $fullwidth;
@@ -258,9 +255,14 @@
 				font-weight: 100;
 				font-family: fantasy;
 			} }	}
-	.about-me .education{
-		height: 100vh;
-		overflow: auto;}
+	.about-me{
+		.portfolio{
+			height: 74vh;
+			overflow: auto;}
+		.education{
+				height: 80vh;
+				overflow: auto;}
+	}
 	}
 	@media(max-width: 600px) {
 		.about-me{
@@ -270,7 +272,11 @@
 			height: $autoheight;
 			flex-basis: $fullwidth;
 		}
-		.education,	.portfolio{
-			height: 78vh;
+		.portfolio{
+			height: 79vh;
+			flex-basis: $fullwidth;
+		}
+		.education{
+			height: 61vh;
 			flex-basis: $fullwidth;
 		} } }

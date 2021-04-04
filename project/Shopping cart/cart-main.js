@@ -51,8 +51,8 @@ for (let i = 0; i < carts.length; i++) {
     })
 }
 // run function & calculate how many items in cart. this fuction already call in main.js file in for loop
-let cartnumbers = (product) => {
-    //console.log("the product clicked is",product);
+let cartnumbers = (products) => {
+    // console.log("the product clicked is",products);
     let productnumbers = localStorage.getItem('cartnumbers');
     productnumbers = parseInt(productnumbers);
     if (productnumbers) {
@@ -62,5 +62,5 @@ let cartnumbers = (product) => {
         localStorage.setItem("cartnumbers", 1);
         document.querySelector('.nav-link span').textContent = 1;
     }
-    setItems(product);
+    setItems(products);
 }

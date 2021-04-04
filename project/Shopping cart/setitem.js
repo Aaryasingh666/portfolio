@@ -1,20 +1,20 @@
 // in this function i store the item  in localStorage this fuction is called in cartnumbers function
-let setItems = (product) => {
+let setItems = (products) => {
 let cartitems = localStorage.getItem('productsincart');
 cartitems = JSON.parse(cartitems);
 if(cartitems != null){
-if(cartitems[product.tag] == undefined){
+if(cartitems[products.tag] == undefined){
 cartitems = {
 ...cartitems,
-[product.tag]:product
+[products.tag]:products
 } }
-cartitems[product.tag].incart += 1;
+cartitems[products.tag].incart += 1;
 }
 else{
-product.incart = 1;
+products.incart = 1;
 
 cartitems = {
-[product.tag]:product
+[products.tag]:products
 } } 
 localStorage.setItem("productsincart",JSON.stringify(cartitems));
 }

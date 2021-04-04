@@ -167,11 +167,11 @@ nav img {
 .about-me .portfolio {
   height: 61vh;
   overflow: auto;
+  margin: 15px 10px;
+  border-radius: 25px;
+  padding-bottom: 20px;
   background: -webkit-gradient(linear, left top, left bottom, from(#52566e), to(#7e91b9));
   background: linear-gradient(to bottom, #52566e, #7e91b9);
-  margin: 15px 10px;
-  padding-bottom: 20px;
-  border-radius: 25px;
   -webkit-box-shadow: inset 5px 5px 5px #928f8f33, inset -5px -5px 15px #ffffff1a, 5px 5px 15px #0000004d, -5px -5px 15px #ffffff1a;
           box-shadow: inset 5px 5px 5px #928f8f33, inset -5px -5px 15px #ffffff1a, 5px 5px 15px #0000004d, -5px -5px 15px #ffffff1a;
 }
@@ -228,18 +228,13 @@ nav img {
 }
 
 .about-me .education {
-  height: 61vh;
-  overflow: auto;
+  margin: 15px 10px;
+  border-radius: 25px;
+  padding-bottom: 20px;
   background: -webkit-gradient(linear, left top, left bottom, from(#52566e), to(#7e91b9));
   background: linear-gradient(to bottom, #52566e, #7e91b9);
-  margin: 15px 10px;
-  padding-bottom: 20px;
-  border-radius: 25px;
   -webkit-box-shadow: inset 5px 5px 5px #928f8f33, inset -5px -5px 15px #ffffff1a, 5px 5px 15px #0000004d, -5px -5px 15px #ffffff1a;
           box-shadow: inset 5px 5px 5px #928f8f33, inset -5px -5px 15px #ffffff1a, 5px 5px 15px #0000004d, -5px -5px 15px #ffffff1a;
-}
-
-.about-me .education {
   height: auto;
   overflow: hidden;
 }
@@ -360,8 +355,12 @@ footer .copyright a, footer .copyright a:hover {
     font-weight: 100;
     font-family: fantasy;
   }
+  .about-me .portfolio {
+    height: 74vh;
+    overflow: auto;
+  }
   .about-me .education {
-    height: 100vh;
+    height: 80vh;
     overflow: auto;
   }
 }
@@ -375,8 +374,13 @@ footer .copyright a, footer .copyright a:hover {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
-  .about-me .education, .about-me .portfolio {
-    height: 78vh;
+  .about-me .portfolio {
+    height: 79vh;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .about-me .education {
+    height: 61vh;
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
