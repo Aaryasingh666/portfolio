@@ -9,7 +9,6 @@ let insta = () => open("https://instagram.com/saarya666?igshid=ompxytvg2tqi");
 
 //open project with function method.
 let onepagesite = () => open("project/one pager/index.html");
-
 let navbar = () => open("project/responsive-menu/index.html");
-
 let ShoppingCart = () => open("project/Shopping cart/index.html");
+let modernpage = () => open("project/modern page/index.html");
