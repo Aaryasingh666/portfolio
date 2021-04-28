@@ -53,9 +53,10 @@ header{
 			margin: 0;
 			padding: 0;
 			list-style: none;
+		li:nth-child(2){padding: 0px 0 0 20px;} li:nth-child(3){padding: 25px 0 0 20px;}
 		li{
 			display: inline-block;
-			padding: 10px 0 0 15px;
+			padding: 10px 0 0 0px;
 		a,a:hover{
 			color: #fff;
 			padding: 10px;
