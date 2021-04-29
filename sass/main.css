@@ -30,8 +30,7 @@
 header {
   width: 100%;
   height: 100vh;
-  background: -webkit-gradient(linear, left top, left bottom, from(#ffffffb3), to(#ffffff99)), url("../image/hero.png") top left no-repeat;
-  background: linear-gradient(#ffffffb3, #ffffff99), url("../image/hero.png") top left no-repeat;
+  background: linear-gradient(140deg, #222121f9, #08080898), url("../image/hero.png") top left no-repeat;
 }
 
 header img {
@@ -51,7 +50,7 @@ header .center-div {
 }
 
 header .center-div .heading h1 {
-  color: #45505b;
+  color: #9fabb9;
   font-weight: 700;
   line-height: 56px;
   font-size: 64px !important;
@@ -61,8 +60,25 @@ header .center-div .heading h1 {
 
 header .center-div .heading p {
   padding: 0;
+  color: #979ea7;
   font-size: 30px !important;
   text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+header .center-div .heading .social-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .center-div .heading .social-icons a {
+  color: #b0c1c5;
+  line-height: 1;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0 0 0 10px;
+  padding: 10px 5px;
+  text-align: center;
 }
 
 header .center-div .heading nav ul {
@@ -81,38 +97,23 @@ header .center-div .heading nav ul li:nth-child(3) {
 
 header .center-div .heading nav ul li {
   display: inline-block;
-  padding: 10px 0 0 0px;
+  padding: 12px 0 0 0px;
 }
 
 header .center-div .heading nav ul li a, header .center-div .heading nav ul li a:hover {
-  color: #fff;
+  color: #c5cad199;
   padding: 10px;
   font-size: 15px;
   font-weight: bold;
   letter-spacing: 1px;
   border-radius: 50px;
-  background: #45505b8a;
+  background: #1416188a;
   text-decoration: none;
   text-transform: uppercase;
 }
 
-header .center-div .heading nav ul li a a .fa, header .center-div .heading nav ul li a:hover a .fa {
-  font-size: 20px !important;
-}
-
-header .center-div .social-icons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-header .center-div .social-icons a {
-  color: #40555b;
-  line-height: 1;
-  font-size: 20px;
-  font-weight: 500;
-  margin: 0 0 0 10px;
-  padding: 10px 5px;
+header .center-div .heading nav ul li .fa {
+  font-size: 25px !important;
   text-align: center;
 }
 
@@ -127,7 +128,7 @@ footer {
 footer p {
   margin: 0;
   padding: 0;
-  color: #334434;
+  color: #d0d9e4;
   font-size: 15px;
   font-weight: 400;
   text-align: center;
@@ -159,6 +160,19 @@ footer .copyright a, footer .copyright a:hover {
   img {
     left: 1rem;
     position: relative;
+  }
+}
+
+@media (max-width: 367px) {
+  .center-div nav ul {
+    bottom: 45px;
+    right: -50px;
+    position: fixed;
+  }
+  .center-div nav ul li {
+    display: block !important;
+    margin: 0 0 20px 0;
+    padding: 0 !important;
   }
 }
 /*# sourceMappingURL=main.css.map */

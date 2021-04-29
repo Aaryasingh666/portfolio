@@ -22,7 +22,8 @@ $fullwidth: 100%;  // create variable.
 header{
 	width: $fullwidth;
 	height: 100vh;
-	background: linear-gradient(#ffffffb3,#ffffff99),url('../image/hero.png') top left no-repeat;
+	// background: linear-gradient(#ffffffb3,#ffffff99),url('../image/hero.png') top left no-repeat;
+	background: linear-gradient(140deg,  #222121f9, #08080898),url('../image/hero.png') top left no-repeat;
 	
 	img{width: 6rem; height: 4rem;}
 	.center-div{
@@ -36,7 +37,7 @@ header{
 	
 	.heading{
 	h1{
-		color: #45505b;
+		color: #9fabb9;
 		font-weight: 700;
 		line-height: 56px;
 		font-size: 64px!important;
@@ -45,9 +46,20 @@ header{
 	}
 	p{
 		padding: 0;
+		color: #979ea7;
 		font-size: 30px!important;
 		text-shadow: 1px 2px 5px rgba(0,0,0,0.5);
 	}
+	.social-icons{
+		display: flex;
+		a{
+			color: #b0c1c5;
+			line-height: 1;
+			font-size: 20px;
+			font-weight: 500;
+			margin: 0 0 0 10px;
+			padding: 10px 5px;
+			text-align: center;} }
 	nav{
 		ul{
 			margin: 0;
@@ -56,32 +68,18 @@ header{
 		li:nth-child(2){padding: 0px 0 0 20px;} li:nth-child(3){padding: 25px 0 0 20px;}
 		li{
 			display: inline-block;
-			padding: 10px 0 0 0px;
+			padding: 12px 0 0 0px;
 		a,a:hover{
-			color: #fff;
+			color: #c5cad199;
 			padding: 10px;
 			font-size: 15px;
 			font-weight: bold;
 			letter-spacing: 1px;
 			border-radius: 50px;
-			background: #45505b8a;
+			background: #1416188a;
 			text-decoration: none;
-			text-transform: uppercase;
-		a .fa{
-			font-size: 20px!important;
-	} } } } } }
-	.social-icons{
-		display: flex;
-	}
-	.social-icons a{
-		color: #40555b;
-		line-height: 1;
-		font-size: 20px;
-		font-weight: 500;
-		margin: 0 0 0 10px;
-		padding: 10px 5px;
-		text-align: center;
-} } }
+			text-transform: uppercase; }
+		.fa{font-size: 25px!important; text-align: center;} } } } } } }
 /* =============================footer section start============================= */
 footer{
 	bottom: 20px;
@@ -91,7 +89,7 @@ footer{
 	p {
 		margin: 0;
 		padding: 0;
-  		color: #334434;
+  		color: #d0d9e4;
   		font-size: 15px;
  		font-weight: 400;
 		text-align: center;
@@ -109,10 +107,22 @@ footer{
 } } }
 /* ===================================media querries=================================== */
 @media (max-width: 767px) {
-	.center-div{
-	    left: 40%;
+	.center-div{ left: 40%;}
+	img{left: 1rem; position: relative;} }
+
+@media (max-width:367px) {
+	.center-div {
+		nav{
+			ul{
+				bottom: 45px;
+				right: -50px;
+				position: fixed;
+				li{
+					display: block !important;
+					margin: 0 0 20px 0;
+					padding: 0!important;
+				}
+			}
+		}
 	}
-	img{
-        left: 1rem;
-        position: relative;
-    } }
+}
