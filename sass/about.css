@@ -68,6 +68,66 @@ nav img {
   height: 2.3rem;
 }
 
+nav .toggle {
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 46px;
+  background: #5f6f9a;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  border-radius: 5px;
+  -webkit-box-shadow: -1px 2px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: -1px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+nav .toggle::before {
+  content: '';
+  width: 28px;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  -webkit-transition: .5s;
+  transition: .5s;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+nav .toggle::after {
+  content: '';
+  width: 28px;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  -webkit-transition: .5s;
+  transition: .5s;
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
+}
+
+nav .toggle.active::before {
+  -webkit-transform: translateY(0) rotate(45deg);
+          transform: translateY(0) rotate(45deg);
+}
+
+nav .toggle.active::after {
+  -webkit-transform: translateY(0) rotate(-45deg);
+          transform: translateY(0) rotate(-45deg);
+}
+
+nav .toggle.active {
+  background: #cf2f4f;
+}
+
 .about-me {
   height: auto;
   display: -webkit-box;
@@ -343,17 +403,6 @@ footer .copyright a, footer .copyright a:hover {
   nav .navbar-toggler {
     outline: none;
     border: none;
-  }
-  nav .navbar-toggler span {
-    color: #fff;
-    display: inline-block;
-    width: 1.5em;
-    vertical-align: middle;
-    background: no-repeat center center;
-    background-size: 100% 100%;
-    font-size: 2rem;
-    font-weight: 100;
-    font-family: fantasy;
   }
   .about-me .portfolio {
     height: 74vh;

@@ -12,3 +12,7 @@ let onepagesite = () => open("project/one pager/index.html");
 let navbar = () => open("project/responsive-menu/index.html");
 let ShoppingCart = () => open("project/Shopping cart/index.html");
 let modernpage = () => open("project/modern page/index.html");
+let toggle = document.querySelector('.toggle');
+    toggle.onclick = () => {
+        toggle.classList.toggle('active');
+    }
