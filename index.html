@@ -1,85 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<!-- <link rel="stylesheet" type="text/css" href="main.css"> -->
-		<link rel="stylesheet" type="text/css" href="sass/main.css"> <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
 		<title>Home</title>
+		<link rel="stylesheet" type="text/css" href="./CSS/Home.css" />
+		<link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!-- animation.css cdn link -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+		/>
 		<!-- Latest compiled and minified CSS -->
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-		<!-- fontawesome 4 cdn link-->
-		<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+		/>
+		<!-- fontAwesome 4 cdn link -->
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
 	</head>
-<body onload="preload();">
-	<div id="preloader">
-		<i class="fa-5x fa fa-spinner fa-pulse fa-3x fa-fw"></i>
-		<span class="sr-only">Loading...</span>
-	</div>
-	<!-- =================================header start================================= -->
-	<header id="header">
-		<img src="image/small-logo.png" alt="brand-name">
-		<section class="center-div">
-			<div class="container heading">
-				<h1 class="animate__animated animate__jello animate__slower">aarya</h1>
-				<h6 class="text-white" id="ti"></h6>
-				<p>I'm a passionate graphic/web designer.</p>
-				<div class="social-icons">
-					<a href="" onclick="fiverr();"><i class="fa fa-facebook fa-fw"></i></a>
-					<a href=""onclick="insta();"><i class="fa fa-instagram fa-fw"></i></a>
+	<body>
+		<div id="preloader">
+			<i class="fa-5x fa fa-spinner fa-pulse fa-3x fa-fw"></i>
+			<span class="sr-only">Loading...</span>
+		</div>
+		<!-- =================================header start================================= -->
+		<header id="header">
+			<img src="image/small-logo.png" alt="brand-name" />
+			<section class="center-div">
+				<div class="container heading">
+					<h1 class="animate__animated animate__jello animate__slower">
+						aarya
+					</h1>
+					<h6 class="text-white" id="ti"></h6>
+					<p>I'm a passionate web designer/developer.</p>
+					<div class="social-icons"></div>
+					<nav class="navbar navbar-expand-md navbar-light">
+						<ul class="pr-sm-3">
+							<li>
+								<button>
+									<a
+										href="https://www.fiverr.com/aaryasingh666/"
+										target="_blank"
+										rel="noopener noreferrer"
+									>
+										<i class="fa fa-handshake-o fa-fw"></i>
+										<span>hire me</span>
+									</a>
+								</button>
+							</li>
+							<li>
+								<button>
+									<a
+										href="About.html"
+										target="_blank"
+										rel="noopener noreferrer"
+									>
+										<i class="fa fa-user-o fa-fw"></i>
+										<span>about</span>
+									</a>
+								</button>
+							</li>
+							<li>
+								<button>
+									<a
+										href="https://www.canva.com/design/DAEmB5rWBs4/_Lf5ep5xuEVQL64JXuKhDQ/view"
+										target="_blank"
+										rel="noopener noreferrer"
+									>
+										<i class="fa fa-file-code-o fa-fw"></i>
+										<span>resume</span>
+									</a>
+								</button>
+							</li>
+						</ul>
+					</nav>
 				</div>
-				<nav class="navbar navbar-expand-md navbar-light">
-					<ul class="pr-sm-3">
-						<li>
-							<a href="#header">
-								<i class="fa fa-home fa-fw"></i>
-								<span>home</span>
-							</a>
-						</li>
-						<li>
-							<a href="About.html">
-								<i class="fa fa-user-o fa-fw"></i>
-								<span>about</span>
-							</a>
-						</li>
-						<li>
-							<a href="https://drive.google.com/file/d/1HyLMRxJdW3xgPqfcFA5P9Wd61c8-vBjK/view?usp=sharing" target="_blank">
-								<i class="fa fa-file-code-o fa-fw"></i>
-								<span>resume</span>
-							</a>
-						</li>
-					</ul>
-				</nav>
-			</div>
-		</section>
-		<footer>
-			<p>Thanks for vist please get in touch via fiverr &amp; instagram i'll respond you soon</p>
-			<div class="copyright">
-				<p>&copy;&nbsp;<strong> MyResume</strong>. All Rights Reserved
-					Designed by <a href="" onclick="fiverr();" class="pl-2 text-secondary"> aarya</a>
+			</section>
+			<footer>
+				<p>
+					Thanks for visit please get in touch via fiverr &amp; instagram i'll
+					respond you soon
 				</p>
-			</div>
-		</footer>
-	</header>
+				<div class="copyright">
+					<p>
+						&copy;&nbsp; MyResume. All Rights Reserved Designed by
+						<a
+							href="https://www.fiverr.com/aaryasingh666/"
+							target="_blank"
+							rel="noopener noreferrer"
+							class="pl-2 text-white footerLink"
+						>
+							aarya</a
+						>
+					</p>
+				</div>
+			</footer>
+		</header>
 
-<!-- jQuery library -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<!-- Popper JS -->
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-<!-- Latest compiled JavaScript -->
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<!-- ==========================script========================== -->
-<script>
-	// dynamic clock here.
-	const myclock = () => {
-    	let d = new Date();
-    	let t = d.toLocaleTimeString();
-   	 document.getElementById("ti").innerHTML = t;
-	}
-	setInterval(myclock, 1000);
-</script>
-<script src="main.js"></script>
-</body>
+		<!-- jQuery library -->
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+		<!-- Popper JS -->
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+		<!-- Latest compiled JavaScript -->
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		<!-- ==========================script========================== -->
+
+		<script src="./JS/Home.js" type="module"></script>
+	</body>
 </html>

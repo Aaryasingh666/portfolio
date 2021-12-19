@@ -1,0 +1,303 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap");
+/* ==================================== media queries for Home ==================================== */
+/* ==================================== media queries for About ==================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 300;
+  font-family: 'Mulish', sans-serif; }
+
+::-webkit-scrollbar {
+  width: 5px; }
+  ::-webkit-scrollbar:hover {
+    width: 10px; }
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #52566e, #7e91b9);
+  border-radius: 8px; }
+
+#preloader {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  background: #fff;
+  z-index: 101010101010;
+  display: inline-block; }
+  #preloader .fa-spinner {
+    top: 50%;
+    left: 50%;
+    color: #000;
+    position: absolute;
+    transform: translate(-50%, -50%); }
+
+i {
+  color: #19c; }
+
+h2 {
+  color: #231c1c;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: capitalize; }
+
+h1 {
+  left: 5%;
+  color: #231c1c;
+  bottom: 50px;
+  font-size: 30px;
+  font-weight: bold;
+  position: relative;
+  background: transparent;
+  text-transform: capitalize; }
+
+/* .about-me section start */
+nav {
+  background: linear-gradient(to bottom, #52566e, #7e91b9); }
+  nav img {
+    width: 4rem;
+    height: 2.3rem; }
+  nav .toggle {
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 46px;
+    background: #5f6f9a;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    border-radius: 5px;
+    box-shadow: -1px 2px 5px rgba(0, 0, 0, 0.5); }
+    nav .toggle::before {
+      content: '';
+      width: 28px;
+      height: 2px;
+      background: #fff;
+      position: absolute;
+      transition: 0.5s;
+      transform: translateY(-5px); }
+    nav .toggle::after {
+      content: '';
+      width: 28px;
+      height: 2px;
+      background: #fff;
+      position: absolute;
+      transition: 0.5s;
+      transform: translateY(5px); }
+    nav .toggle.active::before {
+      transform: translateY(0) rotate(45deg); }
+    nav .toggle.active::after {
+      transform: translateY(0) rotate(-45deg); }
+    nav .toggle.active {
+      background: #cf2f4f; }
+
+.about-me {
+  height: auto;
+  display: flex;
+  overflow: hidden;
+  background: linear-gradient(to bottom, #52566e, #7e91b9);
+  flex-basis: 100%;
+  /* aside/left side */
+  /* main/right side */ }
+  .about-me aside {
+    flex-basis: 30%;
+    height: auto;
+    overflow: hidden;
+    background: linear-gradient(to bottom, #52566e, #7e91b9);
+    margin: 15px 10px;
+    padding-bottom: 20px;
+    border-radius: 25px;
+    box-shadow: inset 5px 5px 5px #928f8f33, inset -5px -5px 15px #ffffff1a, 5px 5px 15px #0000004d, -5px -5px 15px #ffffff1a; }
+    .about-me aside img {
+      width: 100%;
+      height: auto;
+      background: linear-gradient(to bottom, #52566e, #7e91b9); }
+    .about-me aside .designation {
+      bottom: 20px;
+      padding: 0 0 0 5%;
+      position: relative;
+      border-bottom: 1px solid #2f4f4f; }
+      .about-me aside .designation p {
+        color: #fff;
+        font-size: 14px;
+        font-weight: 400;
+        text-transform: capitalize; }
+    .about-me aside .skills {
+      width: 100%;
+      height: 200px;
+      overflow: auto; }
+      .about-me aside .skills span {
+        color: #fff;
+        padding: 5px 0;
+        display: block;
+        font-size: 13px;
+        line-height: 1.2;
+        font-weight: 600;
+        margin: 3px 0 0 0;
+        font-style: italic;
+        letter-spacing: 2px;
+        text-transform: uppercase; }
+        .about-me aside .skills span i {
+          float: right;
+          color: #fff;
+          font-size: 12px;
+          font-weight: 500;
+          line-height: 1.2;
+          font-style: italic; }
+      .about-me aside .skills .progress {
+        height: 10px;
+        box-shadow: inset 5px 5px 5px #928f8f33, inset -5px -5px 15px #ffffff1a, 5px 5px 15px #0000004d, -5px -5px 15px #ffffff1a; }
+        .about-me aside .skills .progress .progress-bar {
+          background-color: #343a40;
+          background-size: 100% 100%;
+          animation: progress-bar-stripes 1s linear infinite;
+          background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent); }
+    .about-me aside .set-lang {
+      margin-top: 30px; }
+  .about-me .portfolio {
+    margin: 15px 10px;
+    border-radius: 25px;
+    padding-bottom: 20px;
+    background: linear-gradient(to bottom, #52566e, #7e91b9);
+    height: 61vh;
+    overflow: auto;
+    box-shadow: inset 5px 5px 5px #928f8f33, inset -5px -5px 15px #ffffff1a, 5px 5px 15px #0000004d, -5px -5px 15px #ffffff1a; }
+    .about-me .portfolio .container {
+      padding: 15px; }
+      .about-me .portfolio .container .Task {
+        width: 100%;
+        margin: 0 0 1rem 0;
+        position: relative;
+        border-radius: 20px;
+        box-shadow: inset 5px 5px 5px #928f8f33, inset -5px -5px 15px #ffffff1a, 5px 5px 15px #0000004d, -5px -5px 15px #ffffff1a; }
+        .about-me .portfolio .container .Task .image {
+          width: 100%;
+          height: auto;
+          border-radius: 18px;
+          display: block; }
+        .about-me .portfolio .container .Task .overlay {
+          bottom: 0;
+          opacity: 0;
+          width: 100%;
+          padding: 20px;
+          position: absolute;
+          transition: 1.5s ease;
+          background: black;
+          background: rgba(0, 0, 0, 0.5); }
+          .about-me .portfolio .container .Task .overlay a,
+          .about-me .portfolio .container .Task .overlay a:hover {
+            color: #fff;
+            display: flex;
+            font-size: 20px;
+            font-weight: 400;
+            text-decoration: none;
+            justify-content: center;
+            text-transform: uppercase; }
+        .about-me .portfolio .container .Task:hover .overlay {
+          opacity: 1;
+          border-radius: 18px; }
+  .about-me .education {
+    margin: 15px 10px;
+    border-radius: 25px;
+    padding-bottom: 20px;
+    background: linear-gradient(to bottom, #52566e, #7e91b9);
+    height: auto;
+    overflow: hidden;
+    box-shadow: inset 5px 5px 5px #928f8f33, inset -5px -5px 15px #ffffff1a, 5px 5px 15px #0000004d, -5px -5px 15px #ffffff1a;
+    height: auto;
+    overflow: hidden; }
+    .about-me .education .container {
+      padding: 15px; }
+    .about-me .education h1 {
+      left: 0%;
+      bottom: -5px;
+      font-weight: 800; }
+    .about-me .education .course {
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+      margin-top: 1.2rem;
+      padding: 10px 10px 0px 20px;
+      border-bottom: 1px solid #d3d3d3; }
+      .about-me .education .course h3 {
+        color: #fff;
+        font-size: 18px;
+        font-weight: 500;
+        padding: 0 0 10px 0;
+        text-transform: uppercase; }
+      .about-me .education .course h6,
+      .about-me .education .course h6 i {
+        color: #000;
+        font-size: 16px;
+        font-weight: 300;
+        padding-right: 25px;
+        padding-bottom: 20px; }
+      .about-me .education .course:nth-child(4) {
+        border: none; }
+
+/* =============================footer section start============================= */
+footer {
+  width: 100%;
+  height: auto;
+  padding: 10px 0 0 0;
+  background: linear-gradient(to bottom, #52566e, #7e91b9);
+  box-shadow: inset 5px 5px 5px #928f8f33, inset -5px -5px 15px #ffffff1a, 5px 5px 15px #0000004d, -5px -5px 15px #ffffff1a; }
+  footer .social-icons {
+    display: flex;
+    justify-content: center; }
+    footer .social-icons a,
+    footer .social-icons a:hover {
+      line-height: 1;
+      font-size: 18px;
+      font-weight: 400;
+      margin: 0 0 0 10px;
+      padding: 0px 5px 0;
+      text-align: center; }
+    footer .social-icons .fa {
+      color: #fff; }
+  footer p {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center; }
+  footer .copyright {
+    display: flex;
+    justify-content: center; }
+    footer .copyright a,
+    footer .copyright a:hover {
+      outline: none;
+      color: #fff;
+      font-size: 12px;
+      font-weight: 500;
+      text-decoration: none;
+      text-transform: capitalize; }
+
+@media (max-width: 767px) {
+  .about-me .portfolio {
+    height: 74vh;
+    overflow: auto; }
+  .about-me .education {
+    height: 80vh;
+    overflow: auto; } }
+
+@media (max-width: 600px) {
+  .about-me {
+    display: block; }
+    .about-me aside,
+    .about-me .education,
+    .about-me .portfolio {
+      height: auto;
+      flex-basis: 100%; }
+    .about-me .portfolio {
+      height: 50vh;
+      flex-basis: 100%; }
+      .about-me .portfolio .container .Task {
+        width: 56%;
+        height: auto;
+        margin: auto auto 1rem auto; }
+    .about-me .education {
+      height: 50vh;
+      flex-basis: 100%; } }

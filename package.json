@@ -1,0 +1,23 @@
+{
+	"name": "my_resume",
+	"version": "1.0.0",
+	"description": "",
+	"main": "About.js",
+	"scripts": {
+		"compile:HomeSass": "node-sass sass/components/Home.scss CSS/Home.css",
+		"compile:AboutSass": "node-sass sass/components/About.scss CSS/About.css"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Aaryasingh666/portfolio.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Aaryasingh666/portfolio/issues"
+	},
+	"homepage": "https://github.com/Aaryasingh666/portfolio#readme",
+	"devDependencies": {
+		"node-sass": "^7.0.0"
+	}
+}
