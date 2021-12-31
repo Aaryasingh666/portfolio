@@ -238,8 +238,10 @@ nav .toggle.active {
   background: linear-gradient(to bottom, #52566e, #7e91b9);
   height: 61vh;
   overflow: auto;
-  -webkit-box-shadow: inset 5px 5px 5px #928f8f33, inset -5px -5px 15px #ffffff1a, 5px 5px 15px #0000004d, -5px -5px 15px #ffffff1a;
-          box-shadow: inset 5px 5px 5px #928f8f33, inset -5px -5px 15px #ffffff1a, 5px 5px 15px #0000004d, -5px -5px 15px #ffffff1a;
+  -webkit-box-shadow: inset 5px 5px 5px #928f8f33, inset -5px -5px 15px #ffffff1a,
+ 5px 5px 15px #0000004d, -5px -5px 15px #ffffff1a;
+          box-shadow: inset 5px 5px 5px #928f8f33, inset -5px -5px 15px #ffffff1a,
+ 5px 5px 15px #0000004d, -5px -5px 15px #ffffff1a;
 }
 
 .about-me .portfolio .container {
@@ -302,8 +304,10 @@ nav .toggle.active {
   background: linear-gradient(to bottom, #52566e, #7e91b9);
   height: auto;
   overflow: hidden;
-  -webkit-box-shadow: inset 5px 5px 5px #928f8f33, inset -5px -5px 15px #ffffff1a, 5px 5px 15px #0000004d, -5px -5px 15px #ffffff1a;
-          box-shadow: inset 5px 5px 5px #928f8f33, inset -5px -5px 15px #ffffff1a, 5px 5px 15px #0000004d, -5px -5px 15px #ffffff1a;
+  -webkit-box-shadow: inset 5px 5px 5px #928f8f33, inset -5px -5px 15px #ffffff1a,
+ 5px 5px 15px #0000004d, -5px -5px 15px #ffffff1a;
+          box-shadow: inset 5px 5px 5px #928f8f33, inset -5px -5px 15px #ffffff1a,
+ 5px 5px 15px #0000004d, -5px -5px 15px #ffffff1a;
   height: auto;
   overflow: hidden;
 }
