@@ -1,79 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="main.css"> <link rel="shortcut icon" href="favicon.jpg" type="image/x-icon">
+		<meta charset="UTF-8" />
 		<title>cart page</title>
+		<link rel="stylesheet" href="css/displayCart.css" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="shortcut icon" href="favicon.jpg" type="image/x-icon" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<!-- Latest compiled and minified CSS 1st plugin -->
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
 		<!-- font awesome 2nd plugin. -->
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"/>
 	</head>
-	<body onload="preload();">
-	<div id="preloader">
-		<i class="fa-5x fa fa-spinner fa-pulse fa-3x fa-fw"></i>
-		<span class="sr-only">Loading...</span>
-	</div>
-	<!--******************* nav part Start.********************* -->
-	<nav class="navbar navbar-expand-md navbar-light bg-dark">
-		<div class="container-fluid text-uppercase p-2">
-			<a class="navbar-brand font-weight-bold text-info" href="#">brand name</a>
-			<input id="MyInput" onkeyup="searchproducts();" class="mr-2" type="text" placeholder="Search" aria-label="Search">
-			<button class="btn btn-primary" type="search">Search</button>
-			<button class="navbar-toggler" data-toggle="collapse" data-target="#target">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="target">
-				<ul class="navbar-nav ml-auto text-center">
-					<li class="nav-item">
-						<a href="page1.html" class="nav-link text-white">home</a>
-					</li>
-					<li class="nav-item">
-						<a href="cart.html" class="nav-link text-white">
-							<i class="fa fa-shopping-cart" aria-hidden="true">
-								<span class="badge badge-info text-white"></span>
-							</i>
-						</a>
-					</li>
-				</ul>
+	<body>
+		<div id="preloader"><i class="fa-5x fa fa-spinner fa-pulse fa-3x fa-fw"></i><span class="sr-only">Loading...</span></div>
+		<!--******************* nav part Start.********************* -->
+		<nav class="navbar navbar-expand-md navbar-light bg-dark"></nav>
+		<section class="products-container container-fluid">
+			<div class="product-header">
+				<h5 class="product-title">product</h5>
+				<h5 class="price">price</h5>
+				<h5 class="quantity">quantity</h5>
+				<h5 class="total">total</h5>
 			</div>
-		</div>
-	</nav>
-	<section class="products-container container">
-		<div class="product-header">
-			<h5 class="product-title">product</h5>
-			<h5 class="price">price</h5>
-			<h5 class="quantity">quantity</h5>
-			<h5 class="total">total</h5>
-		</div> 
-		<div class="products"></div>
-	</section>
-	<footer>
-		<div class="social-icons">
-			<a href="" onclick="fiverr();"><i class="fa fa-facebook fa-fw"></i></a>
-			<a href=""onclick="insta();"><i class="fa fa-instagram fa-fw"></i></a>
-		</div>
-		<p>Thanks for vist please get in touch via fiverr &amp; instagram i'll respond you soon</p>
-		<div class="copyright">
-			<p>&copy;&nbsp;<strong> MyResume</strong>. All Rights Reserved Designed by
-				<a href="" onclick="fiverr();" class="pl-2 fa-fw"> aarya</a>
-			</p>
-		</div>
-	</footer>
-	<!-- jQuery library -->
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-	<!-- Popper JS -->
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-	<!-- Latest compiled JavaScript -->
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-	<!-- it is the all JS files -->
-	<script src="cart-main.js"></script>
-	<script src="setitem.js"></script>
-	<script src="totalcost.js"></script>
-	<script src="filteritems.js"></script>
-	<script src="displaycart.js"></script>
-	<script src="onLoadcartnum.js"></script>
-</body>
+			<div class="products"></div>
+		</section>
+		<footer></footer>
+		<!-- jQuery library -->
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+		<!-- Popper JS -->
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+		<!-- Latest compiled JavaScript -->
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		<script src="js/cart.js" type="module"></script>
+	</body>
 </html>

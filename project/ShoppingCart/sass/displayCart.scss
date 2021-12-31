@@ -1,0 +1,73 @@
+@import 'mixins';
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
+/* universal selectors */
+
+* {	@include Global;}
+
+html {	scroll-behavior: smooth; }
+
+#preloader { @include preLoad; }
+
+nav { @include Navbar; }
+
+.products-container {
+	height: auto;
+    margin-top: 2rem;
+    padding-bottom: 3rem;
+
+	.product-header {
+		display: flex;
+		flex-basis: 100%;
+		align-items: center;
+		justify-content: center;
+		text-transform: uppercase;
+		border-bottom: 4px solid #d3d3d3;
+
+		.product-title {@include flexAlign(1,18px); flex-basis: 30%}
+		.price {@include flexAlign(1,18px);}
+		.quantity {@include flexAlign(1,18px);}
+		.total {@include flexAlign(1,18px);}
+	}
+
+	.product {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		padding: 10px 0;
+		justify-content: space-around;
+		border-bottom: 1px solid #d3d3d3;
+
+		img { width: 10%; height: auto; }
+		.align {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			button{
+				color: #434;
+				border: none;
+				padding: 10px;
+				outline: none;
+				font-size: 20px;
+				background: #fff;
+			}
+		}
+	}
+	.basketTotalContainer {
+		display: flex;
+		flex-basis: 100%;
+    justify-content: flex-end;
+
+		.basketTotalTitle {
+			flex-basis: 16%;
+			font-size: 20px;
+			font-weight: 500;
+		}
+		.basketTotal {
+			flex-basis: 11%;
+			font-size: 20px;
+			font-weight: 400;
+		}
+	}
+}
+@import 'footer';
+@import 'break';

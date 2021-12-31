@@ -1,4 +1,4 @@
-    let toggle = document.querySelector('.toggle');
+let toggle = document.querySelector('.toggle');
     toggle.onclick = () => {
-        toggle.classList.toggle('active');
-    }
+	    toggle.classList.toggle('active');
+};

@@ -1,0 +1,110 @@
+/*============================= media query ======================================================*/
+/* ========================== for mobile devices ================================================= */
+@media (max-width: 767px) {
+	nav {
+		height: fit-content;
+		z-index: 10101010;
+		ul {
+			text-align: center;
+			padding-bottom: 15px;
+		}
+	}
+	header,
+	.search,
+	.selection {
+		height: auto;
+		display: block;
+		border-radius: 30px;
+	}
+	header div .image,
+	.search div .image,
+	.selection div .image {
+		left: 20%;
+		width: 400px;
+		height: auto;
+		position: relative;
+		transform: translateX(-10%);
+	}
+	.extra {
+		margin-top: 0.6rem;
+		border-radius: 25px;
+		display: block;
+	}
+	footer {
+		flex-wrap: wrap;
+		column-gap: 50px;
+		text-align: $tCenter;
+		column-count: auto;
+		border-radius: 25px;
+		div {
+			h4 {
+				text-align: center;
+			}
+		}
+	}
+}
+/* ======================================== for small mobile devices ===================================== */
+@media (max-width: 500px) {
+	header div .image,
+	.search div .image,
+	.selection div .image {
+		width: 200px;
+	}
+	header div .btn {
+		margin: 9px 9px 0 0;
+	}
+}
+
+/* ================================== for tablets and Ipads ============================================ */
+@media (min-width: 768px) and (max-width: 1023px) {
+	nav {
+		ul {
+			li {
+				.btn {
+					padding: 10px 15px;
+					font-size: 0.41437rem;
+				}
+			}
+		}
+	}
+
+	header div h1,
+	.search div h1,
+	.selection div h1 {
+		color: $whiteClr;
+		font-size: 1.4rem;
+	}
+
+	header div:nth-child(1),
+	.selection div:nth-child(1) {
+		flex: 2;
+	}
+
+	.test div:nth-child(1) {
+		flex: 1;
+	}
+
+	.search div:nth-child(2) {
+		flex: 2;
+	}
+
+	header div .image,
+	.search div .image,
+	.selection div .image {
+		width: 350px;
+		height: auto;
+	}
+
+	.search div h1,
+	.search div p {
+		color: #171715;
+	}
+
+	.extra {
+		padding: 0 15px;
+	}
+
+	.carousel-indicators {
+		bottom: 33px;
+	}
+}

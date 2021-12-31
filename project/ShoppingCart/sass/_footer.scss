@@ -1,0 +1,38 @@
+footer{
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+    background: #fff;
+
+    .social-icons{
+		display: flex;
+		justify-content: center;
+
+        a,a:hover{
+            line-height: 1;
+            font-size: 20px;
+            font-weight: 400;
+            margin: 0 0 0 10px;
+            padding: 0px  5px 0;
+            text-align: center;}
+
+        .fa-facebook,.fa-instagram{color: #40555b;} }
+    p {
+        margin: 0;
+		padding: 0;
+  		color: #334434;
+  		font-size: 15px;
+ 		font-weight: 400;
+		text-align: center;}
+
+    .copyright{
+		display: flex;
+		justify-content: center;
+
+        a{
+            outline: none;
+            color: #40555b;
+            font-size: 15px;
+            font-weight: 500;
+            text-transform: capitalize; &:hover{text-decoration: none;} } }
+}

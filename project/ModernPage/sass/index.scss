@@ -1,257 +1,199 @@
-@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap");
-* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Mulish', sans-serif;}
+@import 'mixins';
+@import 'var';
+@import url('https://fonts.googleapis.com/css2?family=Licorice&family=Ubuntu&display=swap');
+* {
+	@include Global;
+}
 
-::-webkit-scrollbar { width: 10px;}
-::-webkit-scrollbar-thumb { border-radius: 8px; background: linear-gradient(to bottom, #091020, #7e91b9);}
-// variables and mixin here.
-$whitecolr:#fff;
-@mixin button {
-        color:$whitecolr;
-        font-size: 14px;
-        padding: 5px 10px;
-        margin:0 20px 0 0;
-        border-radius: 10px;
-        border:1px solid $whitecolr;
-        text-transform: capitalize;
-    &:hover{
-        border:none;
-        color:#432500!important;
-        background: #fec200;
-    }
+::-webkit-scrollbar {
+	width: 10px;
 }
-@mixin definearea {
-    height: 70vh;
-    display: flex;
-    margin-top:1rem;
-    flex-basis: 100%;
-    border: 2px solid;
-    align-items: center;
-    border-radius: 150px;
-    background: #091020;
-    justify-content: center;
-    box-shadow: 5px -5px 25px rgba(0,0,0,.5);
+::-webkit-scrollbar-thumb {
+	border-radius: 8px;
+	background: linear-gradient(to bottom, #091020, #7e91b9);
 }
-@mixin searselecth1 {
-    font-size: 2.5rem;
-    padding-bottom:20px;
-    text-transform: uppercase;
+
+body {
+	background: linear-gradient(123deg, #0a1121, #0b111d, #0c121e, #12151c);
 }
-@mixin searselectp {
-    font-size: .98em;
-    font-weight: 300;
-    line-height: 30px;
-    letter-spacing: 2px;
+nav {
+	width: $fullWidth;
+	display: flex;
+	justify-content: space-between;
+	box-shadow: 0 5px 25px rgba(255, 255, 255, 0.05);
+	background: linear-gradient(123deg, #0a1121, #0b111d, #0c121e, #12151c);
+
+	.navbar-brand {
+		font-weight: 700;
+		font-size: 20px;
+		font-style: italic;
+		color: $whiteClr !important;
+		text-transform: $Capitalize;
+	}
+	.ul_center {
+		margin: 0 auto;
+	}
+	a {
+		font-size: 14px;
+		font-weight: 300;
+		color: $whiteClr !important;
+		text-transform: $Capitalize;
+	}
+	.btn {
+		@include button;
+	}
+	.toggle {
+		@include active;
+	}
 }
-body{background: linear-gradient(123deg,#0a1121,#0b111d,#0c121e,#12151c);}
-nav{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    box-shadow: 0 5px 25px rgba(255,255,255,.05);
-    background: linear-gradient(123deg,#0a1121,#0b111d,#0c121e,#12151c);
-    
-    .navbar-brand{
-        font-weight: 700;
-        font-size: 20px;
-        font-style: italic;
-        color: $whitecolr!important;
-        text-transform: capitalize;
-    }
-    .ul_center{
-        margin: 0 auto;
-    }
-    a{
-        font-size: 14px;
-        font-weight: 300;
-        color: $whitecolr!important;
-        text-transform: capitalize;
-    }
-    .btn{@include button;}
-    .toggle{
-        top: 0;
-        right: 0;
-        width: 60px;
-        height: 55px;
-        background: #9051ff;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: absolute;
-    &::before{
-        content: '';
-        width: 28px;
-        height: 2px;
-        background: $whitecolr;
-        position: absolute;
-        transition: .5s;
-        transform: translateY(-5px);
-    }
-    &::after{
-        content: '';
-        width: 28px;
-        height: 2px;
-        background: $whitecolr;
-        position: absolute;
-        transition: .5s;
-        transform: translateY(5px);
-    }
-    &.active::before{
-        transform: translateY(0)rotate(45deg);
-    }
-    &.active::after{
-        transform: translateY(0)rotate(-45deg);
-    }
-    &.active{
-        background: #cf2f4f;
-    } }
+header,
+.extra,
+.search,
+.selection,
+footer {
+	@include defineArea;
 }
-header,.extra,.search,.selection,footer{@include definearea;}
-header{
-    div {flex: 1; padding:20px;
-    h1{
-        color:$whitecolr;
-        font-size: 2rem;
-        font-weight: 600;
-        letter-spacing: 1px;
-        line-height: 50px;
-        text-transform: capitalize;
-        text-shadow: 2px 2px solid rgba(255,255,255,.05); }
-    p{
-        color: $whitecolr;
-        font-size: .73rem;
-        font-weight: 400;
-        line-height: 2; }
-    .btn{@include button;}
-    .image{ width: 400px; height: auto;} } }
-.search{
-    background: #d0e9f0;
-    div {flex: 1; padding:20px;
-        h1{ color:#171715;@include searselecth1 ;}
-        p{ color:#171715;@include searselectp ;}
-        .btn{@include button;color:#171715; border-color:#171715;}
-        .image{ width: 400px; height: auto;}
-     } }
-.selection{
-    div{flex: 1; padding:20px;
-        h1{color:$whitecolr; @include searselecth1;}
-        p{color:$whitecolr; @include searselectp;}
-        .btn{@include button;}
-        .image{ width: 400px; height: auto;} } }
+header {
+	div {
+		flex: 1;
+		padding: 20px;
+		h1 {
+			color: $whiteClr;
+			font-size: 2rem;
+			font-weight: 600;
+			letter-spacing: 1px;
+			line-height: 50px;
+			text-transform: $Capitalize;
+			text-shadow: 2px 2px solid #ffffff0d;
+		}
+		p {
+			color: $whiteClr;
+			font-size: 0.73rem;
+			font-weight: 400;
+			line-height: 2;
+		}
+		.btn {
+			@include button;
+		}
+		.image {
+			width: 400px;
+			height: $aHeight;
+		}
+	}
+}
+.search {
+	background: #d0e9f0;
+	div {
+		flex: 1;
+		padding: 20px;
+		text-align: $tCenter;
+		h1 {
+			color: #171715;
+			@include searSelectH1;
+		}
+		p {
+			color: #050505;
+			@include searSelectP;
+		}
+		.btn {
+			@include button;
+			color: #171715;
+			border-color: #171715;
+		}
+		.image {
+			width: 400px;
+			height: $aHeight;
+		}
+	}
+}
+.selection {
+	div {
+		flex: 1;
+		padding: 20px;
+		h1 {
+			color: $whiteClr;
+			@include searSelectH1;
+		}
+		p {
+			color: $whiteClr;
+			@include searSelectP;
+		}
+		.btn {
+			@include button;
+		}
+		.image {
+			width: 400px;
+			height: $aHeight;
+		}
+	}
+}
 .extra {
-    height: auto;
-    border-top: none;
-    text-align: center;
-    background: transparent;
-    border-radius: 0px 150px 0px 150px / 0px 150px 0px 150px;
-    div {flex: 1; padding:20px;
-    .fa-video-camera{
-        color: #ffbf00;
-        font-size: 1.8rem;
-        padding-bottom: 15px; }
-    h3{
-        color: $whitecolr;
-        font-size: 1.5rem;
-        font-weight: 500;
-        letter-spacing: 1px;
-        padding-bottom: 15px;
-        text-transform: uppercase; }
-    p{
-        color: $whitecolr;
-        font-size: .75rem;
-        font-weight: 300;
-        letter-spacing: 1px;
-        text-transform: capitalize; } } }
-footer{
-    height: auto;
-    background: transparent;
-    padding: 10px 30px;
-    div{flex: 1;
-    ul{
-        list-style: none;
-    li{
-        color: #f8e8e8;
-        padding: 5px 0;
-        font-size: 14px;
-        font-weight: 400;
-        text-transform: uppercase; } }
-    h4{
-        color: #dad4d5;
-        font-size: 18px;
-        font-weight: 600;
-        letter-spacing: 2px;
-        text-align: left;
-        text-transform: capitalize;}
-    .fa{
-        color: #dad4d5;
-        font-size: 14px;
-        font-weight: 500;
-        padding-right: 5px; }
-    p{
-        color: #e9d8db;
-        font-size: 16px;
-        font-weight: 400;
-        letter-spacing: 1px; } } }
-
-/*============================= media query ======================================================*/
-/* ========================== for mobile devices ================================================= */
-@media (max-width:767px) {
-    nav{ z-index: 10101010;
-    ul{
-        text-align: center;
-        padding-bottom: 15px;
-    } }
-    header,.search,.selection{
-        height: auto;
-        display: block;
-        border-radius: 30px;
-    }
-    header div .image, .search div .image, .selection div .image{
-        left: 20%;
-        width: 400px;
-        height: auto;
-        position: relative;
-        transform: translateX(-10%);
-    }
-    .extra {
-        margin-top: .6rem;
-        border-radius: 25px;
-        display: block;
-    }
-    footer{
-        display: block;
-        text-align: center;
-        border-radius: 25px;
-    div {
-        h4{text-align: center; } } } }
-/* ======================================== for small mobile devices ===================================== */
-@media (max-width:500px) {
-    header div .image, .search div .image, .selection div .image{
-        width: 200px;
-        left: 20%;
-        height: auto;
-        position: relative;
-        transform: translateX(15%);
-     }
-    header div .btn{  margin: 9px 9px 0 0;} }
-
-/* ================================== for tablets and Ipads ============================================ */
-@media (min-width:768px) and (max-width:1023px) {
-    nav{ ul{li{.btn{padding: 10px 15px;font-size: .41437rem;} } } }
-    
-    header div h1, .search div h1, .selection div h1{color:$whitecolr; font-size: 1.4rem;}
-
-    header div:nth-child(1), .selection div:nth-child(1){flex:2;}
-    
-    .test div:nth-child(1){flex:1;}
-
-    .search div:nth-child(2){flex:2;}
-
-    header div .image, .search div .image, .selection div .image{width: 350px; height: auto;}
-
-    .search div h1,.search div p{color:#171715;}
-
-    .extra{padding: 0 15px;}
-
-    .carousel-indicators{ bottom:33px;}
+	height: $aHeight;
+	border-top: $bNone;
+	text-align: $tCenter;
+	background: transparent;
+	border-radius: 0px 150px 0px 150px / 0px 150px 0px 150px;
+	div {
+		flex: 1;
+		padding: 20px;
+		.fa-video-camera {
+			color: #ffbf00;
+			font-size: 1.8rem;
+			padding-bottom: 15px;
+		}
+		h3 {
+			color: $whiteClr;
+			font-size: 1.5rem;
+			font-weight: 500;
+			letter-spacing: 1px;
+			padding-bottom: 15px;
+			text-transform: $upperCase;
+		}
+		p {
+			color: $whiteClr;
+			font-size: 0.75rem;
+			font-weight: 300;
+			letter-spacing: 1px;
+			text-transform: $Capitalize;
+		}
+	}
 }
+footer {
+	height: $aHeight;
+	padding: 10px 30px;
+	background: transparent;
+	div {
+		flex: 1;
+		ul {
+			list-style: none;
+			li {
+				color: #f8e8e8;
+				padding: 5px 0;
+				font-size: 14px;
+				font-weight: 400;
+				text-transform: $upperCase;
+			}
+		}
+		h4 {
+			color: #dad4d5;
+			font-size: 18px;
+			font-weight: 600;
+			letter-spacing: 2px;
+			text-align: left;
+			text-transform: $Capitalize;
+		}
+		.fa {
+			color: #dad4d5;
+			font-size: 14px;
+			font-weight: 500;
+			padding-right: 5px;
+		}
+		p {
+			color: #e9d8db;
+			font-size: 16px;
+			font-weight: 400;
+			letter-spacing: 1px;
+		}
+	}
+}
+@import 'break';
